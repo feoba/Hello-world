@@ -1,0 +1,33 @@
+
+clear all
+clc
+close all
+
+warning('off', 'all');
+warning
+TrainDatabasePath = uigetdir('C:\Users\babsf\Desktop\Train', 'Select training database path' );
+TestDatabasePath = uigetdir('C:\Users\babsf\Desktop\Test', 'Select test database path');
+
+tic
+T = CreateDBbsif(TrainDatabasePath);
+
+G
+    
+% g = floor(Recognized_index / 5);
+% g2 = floor(t /5);
+% if rem(Recognized_index, 5) == 0
+%     g= g - 1;
+% end
+% if rem(t, 5) == 0
+%     g2= g2 - 1;
+% end
+% if Recognized_index == t || g == g2
+%       Good = Good +1;
+%     disp('Correct recognition')  
+% else
+%     Bad = Bad +1;
+%     str = strcat('TestImage',str,' Matched image is :  ',Recognized_index);
+% disp(str)  
+% end
+if Recognized_index == i
+   Good = Good +1;
