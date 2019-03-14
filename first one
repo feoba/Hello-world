@@ -2,7 +2,7 @@
 clear all
 clc
 close all
-
+%%%%this might be wrong
 warning('off', 'all');
 warning
 TrainDatabasePath = uigetdir('C:\Users\babsf\Desktop\Train', 'Select training database path' );
