@@ -21,20 +21,7 @@ gen = cellfun(@str2num,ggg);
 Gene = [Gene; gen];
 end
 
-%Select five attributes assigned.
-xdatatemp = Gene(:,[1 100 200 300 450]);
 
-xx = xdatatemp';
-
-minMatr =[];
-for i = 1 : 5
-    temp= min(xx(i,:));
-    minMatr = [minMatr temp];
-end
-m = min(minMatr);
-
-maxMatr =[];
-for i = 1 : 5
     temp= max(xx(i,:));
     maxMatr = [maxMatr temp];
 end
